@@ -1,0 +1,42 @@
+#wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns:1fr 70% 1fr;
+    grid-template-areas:
+    'as mn as2'
+    'as mn as2'
+    'as mn as2'
+}
+
+#wrapper2 {
+    overflow-y: scroll;
+    justify-content: space-around;
+    height: 1000px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+body { margin: 0%;}
+.nav {
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    background-color: #e7f0da;
+  }
+.as { 
+    grid-area: as;
+    background-color: salmon;
+}
+.as2 {
+    grid-area: as2;
+    background-color: salmon;
+}
+.mn {
+    grid-area: mn;
+    background-color: rgb(163, 67, 56);
+}
+section{
+    background-color: aqua;
+    flex: 0 0 250px
+}
