@@ -11,15 +11,26 @@
 
 #wrapper2 {
     background-color: rgb(22, 89, 67);
-    overflow-y: scroll;
     padding-top: 70px;
     justify-content: center;
-    height: 1000px;
+    height: 800px;
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
 }
 
+a{
+    display: flex;
+    flex: 4;
+    height: 40px;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+}
+a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+} 
 body {
     margin: 0%;
 }
@@ -77,8 +88,11 @@ h1 {
 }
 
 div.meny-item {
-    justify-content: center;
-    margin: 10px;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
     flex: 0 0 500px
 }
 
