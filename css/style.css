@@ -9,14 +9,29 @@
         'as mn as2'
 }
 
-#wrapper2 {
+.mn2 {
+    grid-area: mn;
     background-color: rgb(22, 89, 67);
-    padding-top: 70px;
     justify-content: center;
-    height: 800px;
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
+}
+
+.hd {
+    grid-area: hd;
+    background-color: rgb(22, 89, 67);
+    justify-content: center;
+    display: flex;
+}
+#wrapper2 {
+    display: grid;
+    padding-top: 70px;
+    height: 100vh;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+        'hd hd hd'
+        'mn mn mn'
 }
 
 a{
@@ -24,6 +39,7 @@ a{
     flex: 4;
     height: 40px;
     background-color: aquamarine;
+    border-radius: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -55,11 +71,10 @@ body {
     display: flex;
 }
 div.img-side {
-    justify-content: space-around;
-    background-image: url("../img/animals/lizard.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     flex-basis: 250px;
+    margin: auto;
+    flex: 0 0 100px
 }
 
 .as2 {
@@ -81,7 +96,7 @@ h1 {
     grid-area: mn;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/animals/lizard.jpeg");
+    background-image: url("../img/animals/waterpokemonbgblur.png");
     background-size:cover;
     background-repeat: no-repeat;
     display: flex;
@@ -97,10 +112,10 @@ div.meny-item {
 }
 
 div.personal-item {
-    justify-content: space-around;
-    margin: 10px;
-    background-image: url("../img/animals/lizard.jpeg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex: 0 0 250px
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    flex: 0 0 100px
 }
