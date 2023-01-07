@@ -12,9 +12,10 @@
 .mn2 {
     grid-area: mn;
     background-color: rgb(22, 89, 67);
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: row;
+    gap: 20px;
     display: flex;
 }
 
@@ -63,29 +64,65 @@ body {
 }
 
 .as {
+    background-color: black;
     grid-area: as;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'img1'
+    'img2'
+    'img3'
 }
-div.img-side {
-    background-size: cover;
-    flex-basis: 250px;
-    margin: auto;
-    flex: 0 0 100px
-}
-
 .as2 {
     grid-area: as2;
-    background-color: salmon;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'img4'
+    'img5'
+    'img6'
+}
+
+
+.img-side1 {
+    grid-area: img1;
     height: 100%;
     width: 100%;
-    flex-direction: column;
-    display: flex;
+    object-fit: fill;
 }
+.img-side2 {
+    grid-area: img2;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.img-side3 {
+    grid-area: img3;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.img-side4 {
+    grid-area: img4;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.img-side5 {
+    grid-area: img5;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.img-side6 {
+    grid-area: img6;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+
+
 
 h1 {
     color: aliceblue;
@@ -112,10 +149,16 @@ div.meny-item {
 }
 
 div.personal-item {
-    justify-items: center;
-    align-items: center;
+    min-width: 0;
+    justify-content: center;
     flex-direction: column;
+    flex-basis: 250px;
     display: flex;
     margin: auto;
-    flex: 0 0 100px
 }
+
+.personal-image {
+    border-radius: 30px;
+}
+
+p {text-align: center;}
