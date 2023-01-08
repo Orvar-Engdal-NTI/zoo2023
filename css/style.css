@@ -1,7 +1,7 @@
 #wrapper {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 70px 1fr 1fr;
     grid-template-areas:
         'nv nv nv'
@@ -9,9 +9,13 @@
         'as mn as2'
 }
 
+
+
 .mn2 {
+    padding-bottom: 20px;
+    margin-top: 30px;
     grid-area: mn;
-    background-color: rgb(22, 89, 67);
+    background: transparent;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
@@ -21,10 +25,17 @@
 
 .hd {
     grid-area: hd;
-    background-color: rgb(22, 89, 67);
+    background: rgba(35, 85, 138, 0.5);
     justify-content: center;
     display: flex;
 }
+html { 
+    background: url("../img/animals/waterpokemonbgblur.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 #wrapper2 {
     display: grid;
     padding-top: 70px;
@@ -34,12 +45,30 @@
         'hd hd hd'
         'mn mn mn'
 }
+#wrapper3 {
+    display: grid;
+    padding-top: 70px;
+    height: 100vh;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-areas:
+        'hd hd hd'
+        'mn mn mn'
+        'ft ft ft'
+}
+
+.ft {
+    grid-area:ft;
+    background: rgba(35, 85, 138, 0.5);
+}
 
 a{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seriff;
+    text-decoration: none;
+    color: black;
     display: flex;
     flex: 4;
     height: 40px;
-    background-color: aquamarine;
+    background-color: rgb(210, 247, 235);
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -57,9 +86,9 @@ body {
     position: fixed;
     height: 70px;
     width: 100%;
-    background-color: #e7f0da;
+    background-color: #1c2766;
     align-items: center;
-    justify-content: space-around;
+   gap: 20px;
     display: flex;
 }
 
@@ -133,13 +162,14 @@ h1 {
     grid-area: mn;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/animals/waterpokemonbgblur.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+    background: transparent;
     display: flex;
 }
 
 div.meny-item {
+    border-radius: 30px;
+    padding: 10px;
+    background: rgba(106, 178, 255, 0.7);
     justify-items: center;
     align-items: center;
     flex-direction: column;
@@ -149,8 +179,11 @@ div.meny-item {
 }
 
 div.personal-item {
+    border-radius: 30px;
+    background-color: #9aaafa;
     min-width: 0;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-basis: 250px;
     display: flex;
@@ -158,7 +191,18 @@ div.personal-item {
 }
 
 .personal-image {
+    margin: 20px;
     border-radius: 30px;
+    width: 200px;
+    height: 200px;
 }
 
-p {text-align: center;}
+p {text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ol {
+    font-size: medium;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-seriff;
+    line-height: 30px;
+}
